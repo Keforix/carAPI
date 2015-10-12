@@ -123,5 +123,23 @@
 			}
 		}
 		
+		function deleteCar($id) {
+			try {
+				$connection = new DBconnection("cars");
+				$db = $connection->getDb();
+				
+				$stmt = $db -> prepare("DELETE FROM tbl_car
+										WHERE auto_id = ?");
+				$stmt -> bindValue(1, $id, PDO::PARAM_INT);
+		
+				$stmt -> execute();
+				
+				return "SUCCESS";
+			}
+			catch (PDOException $ex) {
+				return "<p>ERROR: " . $ex -> getMessage() . "</p>";
+			}
+		}
+		
 	}
 ?>
