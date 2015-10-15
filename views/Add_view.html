@@ -1,0 +1,44 @@
+﻿<div>
+    <table width="100%">
+        <tr>
+            <td class="kleur2">Omschrijving</td>
+            <td class="kleur2"><input type="text" ng-model="desc" placeholder="Omschrijving" /></td>
+        </tr>
+        <tr>
+            <td class="kleur2">Basisprijs</td>
+            <td class="kleur2"><input type="text" ng-model="price" placeholder="Basisprijs" /></td>
+        </tr>
+        <tr>
+            <td class="kleur2">Verkeersbelasting (jaarlijks)</td>
+            <td class="kleur2"><input type="text" ng-model="trafficTax" placeholder="Verkeersbelasting" /></td>
+        </tr>
+        <tr>
+            <td class="kleur2">Belasting op inverkeerstelling</td>
+            <td class="kleur2"><input type="text" ng-model="theOtherTax" placeholder="Belasting" /></td>
+        </tr>
+        <tr>
+            <td class="kleur2">Gemid. verbruik (l/100 km)</td>
+            <td class="kleur2"><input type="text" ng-model="usage" placeholder="Gemid. verbruik" /></td>
+        </tr>
+        <tr>
+            <td class="kleur2">Type</td>
+            <td class="kleur2">
+                <select ng-model="typeOfCar" >
+                    <option value="A" selected>A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="CL">CL</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right;"><button ng-click="addCtrl.addCar( { omschrijving: desc, 
+                                                               basisprijs: price, 
+                                                               verkbelast: trafficTax, 
+                                                               inverkbelast: theOtherTax, 
+                                                               verbruik: usage, 
+                                                               type: typeOfCar } )">Add car</button></td>
+        </tr>
+    </table>
+    <br />
+</div>

@@ -1,0 +1,11 @@
+﻿<div ng-controller="deleteController as delCtrl">
+    <table width="100%">
+        <tr ng-repeat="car in homeCtrl.cars">
+            <td><img src="images/delete.png" witdh="50%" height="50%" ng-click="delCtrl.deleteCar( car.id );" /></td>
+            <td><a href="#/detail/{{ car.id }}">{{ car.omschrijving }}</a></td>
+            <td>{{ car.basisprijs }}</td>
+            <td>{{ car.type }}</td>
+        </tr>
+    </table>
+    <br />
+</div>

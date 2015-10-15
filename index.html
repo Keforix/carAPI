@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Oefening 1</title>
+    <meta http-equi="Content-Type" content="text/html; charset=UTF-8">
+
+    <link href="css/autoweb.css" rel="stylesheet" type="text/css" />
+
+    <script src="libs/angular.js"></script>
+    <script src="libs/angular-route.js"></script>
+</head>
+<body ng-controller="constantsController as constCtrl">
+    <center>
+        <div id="container">
+            <div id="header"></div>
+            <div id="middle">
+                <div id="leftmiddle" ng-view>
+                    <br />
+                    <br />
+                </div>
+            </div>
+            <div id="footer">
+                <table width="50%">
+                    <th><a href="#/home">Home</a></th>
+                    <th><a href="#/add">Add car</a></th>
+                    <th><a href="#/partners">Mercedes Partners</a></th>
+                </table>
+            </div>
+        </div>
+    </center>
+
+    <footer style="color: white; float: right;">
+        <p>{{ constCtrl.appName }}</p>
+        <p>{{ constCtrl.appVersion }}</p>
+    </footer>
+
+    <script src="modules/module.js"></script>
+
+    <script src="factories/carFactory.js"></script>
+
+    <script src="controllers/homeController.js"></script>
+    <script src="controllers/detailController.js"></script>
+    <script src="controllers/deleteController.js"></script>
+    <script src="controllers/addController.js"></script>
+    <script src="controllers/constantsController.js"></script>
+
+    <script src="constants/appConstants.js"></script>
+</body>
+</html>

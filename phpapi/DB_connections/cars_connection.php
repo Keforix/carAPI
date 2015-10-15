@@ -5,8 +5,8 @@
 * @author  Ruben Vanoverschelde
 */
 class DBconnection {
-	private $user = 'pxluser';
-	private $pass = 'pxluser';
+	private $user = 'root';
+	private $pass = '';
 	private $db;
 	
 	/**

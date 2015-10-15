@@ -1,0 +1,25 @@
+﻿<div>
+    <table width="100%">
+        <tr>
+            <td rowspan="5"><img src="images/{{ detailCtrl.car.type }}.png" /></td>
+            <td colspan="1">{{ detailCtrl.car.omschrijving }}</td>
+        </tr>
+        <tr>
+            <td class="kleur2">Basisprijs</td>
+            <td class="kleur2"><input type="text" readonly value="{{ detailCtrl.car.basisprijs }}" /></td>
+        </tr>
+        <tr>
+            <td class="kleur2">Verkeersbelasting (jaarlijks)</td>
+            <td class="kleur2"><input type="text" readonly value="{{ detailCtrl.car.verkbelast }}" /></td>
+        </tr>
+        <tr>
+            <td class="kleur2">Belasting op inverkeerstelling</td>
+            <td class="kleur2"><input type="text" readonly value="{{ detailCtrl.car.inverkbelast }}" /></td>
+        </tr>
+        <tr>
+            <td class="kleur2">Gemid. verbruik (l/100 km)</td>
+            <td class="kleur2"><input type="text" readonly value="{{ detailCtrl.car.verbruik }}" /></td>
+        </tr>
+    </table>
+    <br />
+</div>

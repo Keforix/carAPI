@@ -1,0 +1,61 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+#container {
+	width: 950px;
+	margin-left: 30px;
+	border: 1px solid #F90;
+	margin-top: 20px;
+}
+#leftmiddle {
+	width: 850px;
+	float: left;
+	color: #FFF;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+#header {
+	background-image: url(../images/header.jpg);
+	height: 150px;
+	width: 830px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 10px;
+}
+.rechts {
+	text-align: right;
+}
+.links {
+	text-align: left;
+}
+
+table {
+	border: 2px solid #36C;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(../images/m_background.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.center {
+	text-align: center;
+}
+#footer {
+	background-image: url(../images/footer.jpg);
+	height: 150px;
+	width: 850px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	clear: left;
+}
+a {
+	color: #FF0;
+}
+.kleur1 {
+	background-color: #666;
+}
+.kleur2 {
+	background-color: #CCC;
+    width: 60%;
+}
